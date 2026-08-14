@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WonderCut</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png" />
+</head>
+<body>
+  <nav>
+    <a class="brand" href=""><img src="icon.png" alt="" />WonderCut</a>
+    <a href="" class="active">Home</a>
+    <a href="features/">Features</a>
+    <a href="tiktok-integration/">TikTok Integration</a>
+    <a href="about/">About</a>
+  </nav>
+
+  <div class="hero">
+    <img src="icon.png" alt="WonderCut" />
+    <div>
+      <h1>WonderCut</h1>
+      <p class="tagline">The desktop video studio behind AKILA &amp; The Wonder Machine's
+      short-form music content.</p>
+    </div>
+  </div>
+
+  <p>WonderCut is a purpose-built desktop application (macOS) that Akila Kavisinghe uses to turn the
+  band's live footage, studio takes, and music into finished vertical videos. It handles the whole
+  workflow: syncing lyrics to audio word by word, cutting between camera angles on tapped beats,
+  styling captions, batch-generating dozens of draft videos, and delivering the approved ones to the
+  band's own TikTok accounts as drafts.</p>
+
+  <p>It is a personal production tool, not a commercial product. It is not distributed to or offered
+  for use by the general public.</p>
+
+  <h2>What it does</h2>
+  <div class="card-grid">
+    <div class="card"><h3>Lyric sync</h3><p>Aligns every word of a song's lyrics to the audio,
+      producing word-accurate timing that drives all caption rendering.</p></div>
+    <div class="card"><h3>Multi-cam cutting</h3><p>Syncs different camera angles of the same take
+      and cuts between them on beats tapped in time with the song.</p></div>
+    <div class="card"><h3>Caption design</h3><p>Reusable caption and font templates: typography,
+      colors, backgrounds, animation, and per-section overrides.</p></div>
+    <div class="card"><h3>Mass export</h3><p>Batch-generates randomized draft videos from saved
+      styles, with an approve and reject curation flow before anything renders.</p></div>
+    <div class="card"><h3>Footage library</h3><p>A tagged, cross-song clip library with highlight
+      marking, framing presets, and per-clip crop variations.</p></div>
+    <div class="card"><h3>TikTok drafts</h3><p>Approved exports go to the band's own TikTok inboxes
+      as drafts, to be reviewed and posted from the phone.</p></div>
+  </div>
+
+  <h2>How a video gets made</h2>
+  <div class="step"><span class="n">1</span><p>A song's audio and lyrics are imported and synced,
+  giving every word a timestamp.</p></div>
+  <div class="step"><span class="n">2</span><p>Footage is organized: multi-cam takes are aligned to
+  the song, B-Roll is tagged and highlighted, framings are saved for vertical output.</p></div>
+  <div class="step"><span class="n">3</span><p>The mass exporter rolls batches of candidate videos
+  from saved styles; each draft is previewed, tweaked, and approved or discarded.</p></div>
+  <div class="step"><span class="n">4</span><p>Approved drafts render to MP4 through a
+  Remotion-based render pipeline.</p></div>
+  <div class="step"><span class="n">5</span><p>Finished videos are sent to the band's own TikTok
+  accounts as inbox drafts through TikTok's official Content Posting API, then reviewed and posted
+  by hand. <a href="tiktok-integration/">Details here.</a></p></div>
+
+  <footer>
+    WonderCut is built and operated by Akila Kavisinghe for AKILA &amp; The Wonder Machine.<br />
+    <a href="terms-of-service/">Terms of Service</a> &middot;
+    <a href="privacy-policy/">Privacy Policy</a> &middot;
+    <a href="mailto:akilakavisinghe1999@gmail.com">Contact</a>
+  </footer>
+</body>
+</html>
