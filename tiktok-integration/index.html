@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WonderCut</title>
+  <title>TikTok Integration — WonderCut</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../icon.png" />
 </head>
@@ -17,24 +17,23 @@
   </nav>
 
   <h1>TikTok Integration</h1>
-  <p class="tagline">Drafts only. The band's own accounts only. Always user-initiated.</p>
+  <p class="tagline">Drafts only. Your own accounts only. Always initiated by you.</p>
 
   <p>WonderCut integrates with TikTok through the official TikTok for Developers platform, using
-  Login Kit for account authorization and the Content Posting API's upload flow for delivery. The
-  integration exists for one purpose: moving finished videos from the desktop editing pipeline to
-  the phone, where they are reviewed and posted by hand.</p>
+  Login Kit to connect an account and the Content Posting API's upload flow to deliver videos. The
+  integration has one purpose: moving finished videos from WonderCut on your computer to your TikTok
+  app, where you review, caption, and post them yourself.</p>
 
   <h2>How it works</h2>
-  <div class="step"><span class="n">1</span><p>In WonderCut's settings, a band account is connected
-  once through TikTok's own login and consent page, opened in the system browser. The app never sees
-  the account password.</p></div>
-  <div class="step"><span class="n">2</span><p>On the Mass Export screen, the user picks a connected
-  account and sends an exported video, or a whole approved batch, to it.</p></div>
-  <div class="step"><span class="n">3</span><p>Each video is uploaded to TikTok as an inbox draft. A
-  notification appears in that account's TikTok app inbox: "Your content from WonderCut is
-  ready."</p></div>
-  <div class="step"><span class="n">4</span><p>Tapping the notification opens TikTok's own editor,
-  where the video is captioned, finished, and posted manually, or discarded.</p></div>
+  <div class="step"><span class="n">1</span><p>In WonderCut's settings, you connect your TikTok
+  account through TikTok's own login and consent page, opened in your browser. WonderCut never sees
+  your password.</p></div>
+  <div class="step"><span class="n">2</span><p>After reviewing a batch, you pick a connected account
+  and send an exported video, or a set of approved videos, to it.</p></div>
+  <div class="step"><span class="n">3</span><p>Each video is uploaded to TikTok as a draft, and a
+  notification appears in that account's TikTok inbox: "Your content from WonderCut is ready."</p></div>
+  <div class="step"><span class="n">4</span><p>Tapping the notification opens TikTok's editor, where
+  you finish and post the video, or discard it.</p></div>
 
   <h2>Permissions used</h2>
   <dl>
@@ -42,25 +41,22 @@
     <dd>Reads the connected account's display name and avatar, used only to label the account inside
     the app.</dd>
     <dt><code>user.info.profile</code></dt>
-    <dd>Reads the account's username (the handle), shown so the right account is always chosen when
-    several are connected.</dd>
+    <dd>Reads the account's username (handle), so you can tell your connected accounts apart.</dd>
     <dt><code>video.upload</code></dt>
-    <dd>Uploads videos to the connected account's inbox as drafts. The app holds no permission to
-    publish content and never posts publicly.</dd>
+    <dd>Uploads videos to the connected account as drafts. WonderCut holds no permission to publish and
+    never posts publicly.</dd>
   </dl>
 
   <h2>What the integration never does</h2>
-  <p>It never posts publicly or on a schedule, never touches accounts other than the band's own
-  connected accounts, never reads followers, analytics, or messages, and never acts without an
-  explicit click. Access tokens are stored only on the band's own computer, encrypted with the
-  operating system's secure storage. Disconnecting an account in settings revokes its token with
-  TikTok.</p>
+  <p>It never posts publicly, never touches accounts you haven't connected, never reads followers,
+  analytics, or messages, and never sends anything without your explicit action. Access tokens are
+  stored only on your computer, encrypted with your operating system's secure storage.
+  Disconnecting an account in settings revokes its token with TikTok.</p>
 
   <footer>
-    WonderCut is built and operated by Akila Kavisinghe for AKILA &amp; The Wonder Machine.<br />
+    WonderCut is independently developed. Private alpha; public beta planned for 2027.<br />
     <a href="../terms-of-service/">Terms of Service</a> &middot;
-    <a href="../privacy-policy/">Privacy Policy</a> &middot;
-    <a href="mailto:akilakavisinghe1999@gmail.com">Contact</a>
+    <a href="../privacy-policy/">Privacy Policy</a>
   </footer>
 </body>
 </html>

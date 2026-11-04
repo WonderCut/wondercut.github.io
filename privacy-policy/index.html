@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WonderCut</title>
+  <title>Privacy Policy — WonderCut</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../icon.png" />
 </head>
@@ -17,45 +17,58 @@
   </nav>
 
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: August 11, 2026</em></p>
+  <p class="tagline">Last updated: November 4, 2026</p>
 
-  <p>WonderCut ("the App") is a personal desktop application built and operated by Akila Kavisinghe
-  for the band AKILA &amp; The Wonder Machine. It runs entirely on the user's own computer and is
-  not distributed to or offered for use by the general public. This policy describes what data the
-  App handles and how.</p>
+  <p>WonderCut ("the App") is a desktop application for creating short-form music videos, developed
+  independently. It is currently in private alpha, with a beta for invited users planned. This
+  policy describes what data the App handles, where it goes, and how to delete it.</p>
 
-  <h2>1. Data the App handles</h2>
-  <p>All video, audio, and project files you work with in the App stay on your computer. The App
-  operates no servers and collects no analytics, telemetry, or usage data.</p>
+  <h2>1. Your projects stay on your computer</h2>
+  <p>Your songs, footage, projects, and rendered videos are stored on your own computer. The App does
+  not collect analytics, telemetry, or usage data.</p>
 
-  <h2>2. TikTok data</h2>
+  <h2>2. Services the App sends data to</h2>
+  <p>Some features send specific content to a service provider, only when you use that feature:</p>
+  <dl>
+    <dt>TikTok</dt>
+    <dd>When you connect an account and send a video. See section 3.</dd>
+    <dt>AudioShake (lyric alignment)</dt>
+    <dd>A song's audio and lyrics, to compute word timings.</dd>
+    <dt>Anthropic (AI text suggestions)</dt>
+    <dd>Song titles, lyrics, hook text, and your notes, to draft hooks and post descriptions.</dd>
+    <dt>Google Gemini (AI song analysis)</dt>
+    <dd>A song's audio and your notes, to suggest how a song or performance could be split up.</dd>
+    <dt>Cloudflare (optional post queue)</dt>
+    <dd>Videos you choose to queue for posting from your phone, with their post text. Queued media is
+    deleted when you mark the post as posted, or when you remove it from the queue.</dd>
+  </dl>
+  <p>Each provider processes this content under its own terms and privacy policy. The App does not
+  sell your data or share it with anyone else.</p>
+
+  <h2>3. TikTok data</h2>
   <p>When you connect a TikTok account, the App receives through TikTok's official API, with your
   authorization: your account's open ID, display name, username, and avatar (scopes
   <code>user.info.basic</code> and <code>user.info.profile</code>), and the ability to upload video
-  drafts to your account's inbox (scope <code>video.upload</code>).</p>
-  <p>This information and the associated access tokens are stored only on your computer, encrypted
-  with your operating system's secure storage where available. They are never transmitted anywhere
-  except to TikTok's own API. Videos are uploaded to TikTok only when you explicitly initiate an
-  upload, and only as drafts to your own account.</p>
+  drafts to your account (scope <code>video.upload</code>).</p>
+  <p>This information and the access tokens are stored only on your computer, encrypted with your
+  operating system's secure storage where available, and are sent only to TikTok's own API. Videos
+  are uploaded only when you explicitly send them, and only as drafts to your own account.</p>
 
-  <h2>3. Sharing</h2>
-  <p>The App does not sell, share, or transmit your data to any third party. The only external
-  service the TikTok integration communicates with is TikTok itself.</p>
+  <h2>4. Companion iPhone app</h2>
+  <p>The companion app connects directly to WonderCut on your own Mac, over your local network or a
+  private network you set up. Videos it downloads for previewing are stored on your phone and can be
+  removed at any time from its storage settings.</p>
 
-  <h2>4. Data deletion</h2>
+  <h2>5. Deleting your data</h2>
   <p>Disconnecting a TikTok account in the App's settings revokes its access token with TikTok and
-  deletes the stored tokens and profile information from your computer. You can also revoke the
-  App's access from your TikTok account's security settings at any time.</p>
-
-  <h2>5. Contact</h2>
-  <p>Questions about this policy:
-  <a href="mailto:akilakavisinghe1999@gmail.com">akilakavisinghe1999@gmail.com</a></p>
+  deletes the stored tokens and profile information from your computer. You can also revoke access
+  from your TikTok account's security settings. Your project files are yours to delete like any other
+  files on your computer. To have any data held in the post queue deleted, remove it in the App.</p>
 
   <footer>
-    WonderCut is built and operated by Akila Kavisinghe for AKILA &amp; The Wonder Machine.<br />
+    WonderCut is independently developed. Private alpha; public beta planned for 2027.<br />
     <a href="../terms-of-service/">Terms of Service</a> &middot;
-    <a href="../privacy-policy/">Privacy Policy</a> &middot;
-    <a href="mailto:akilakavisinghe1999@gmail.com">Contact</a>
+    <a href="../privacy-policy/">Privacy Policy</a>
   </footer>
 </body>
 </html>

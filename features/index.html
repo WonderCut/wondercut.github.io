@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WonderCut</title>
+  <title>Features — WonderCut</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../icon.png" />
 </head>
@@ -20,51 +20,51 @@
   <p class="tagline">Everything between a raw take and a finished vertical video.</p>
 
   <h2>Word-accurate lyric sync</h2>
-  <p>Each song's lyrics are force-aligned to its audio, so every word carries a start and end time.
-  Sections (verse, chorus, bridge) are marked on the waveform, and each section can carry multiple
-  tapped beat progressions that drive cutting. Sync can be refined by hand in a dedicated editor
-  when the automatic alignment needs correction.</p>
+  <p>Each song's lyrics are aligned to its audio, so every word carries a start and end time.
+  Sections (verse, chorus, bridge) are marked on the waveform, and each section can carry tapped beat
+  progressions that drive cutting. Timing can be refined by hand when the automatic alignment needs
+  correction.</p>
 
   <h2>Multi-cam sync and beat cutting</h2>
-  <p>Multiple camera angles of one performance are aligned against a parent take to form a multi-cam
-  group. Cuts between angles are generated from beats tapped in time with the music, with controls
-  for avoiding repeated angles, using saved crop variations, and falling back to the parent angle
-  where coverage runs out. Every segment stays editable before export.</p>
+  <p>Multiple camera angles of one performance are aligned into a multi-cam group. Cuts between
+  angles are generated from beats tapped in time with the music, with controls for avoiding repeated
+  angles and using saved crop variations. Every cut stays editable before export.</p>
 
   <h2>Caption and font templates</h2>
-  <p>Caption styling is template-driven: font family and weight, fine typography (tracking, line
-  height, per-word emphasis), text and background colors, animation mode, and placement are saved as
-  reusable templates that apply across songs. Hooks, the attention-grabbing opening text, have their
-  own layout system with a drag-to-position preview.</p>
+  <p>Caption styling is template-driven: font, weight, tracking, line height, colors, backgrounds,
+  animation (including word-by-word reveals), and placement are saved as reusable templates that
+  apply across songs. Hooks, the attention-grabbing opening text, have their own layout and can be
+  drafted with AI assistance.</p>
 
   <h2>Footage library</h2>
-  <p>All clips across all songs live in one tagged library: song tags, folder tags, and custom tags
-  combine into queries that drive automatic clip selection. B-Roll clips carry marked highlight
-  ranges so only their best moments are used. Per-clip framings define how each source clip is
-  cropped for vertical and 4:3 output, and framings can themselves be tagged and filtered.</p>
-
-  <h2>Intro clips</h2>
-  <p>An edit can open on a chosen clip with its own audio at full volume while the song ducks
-  underneath and fades up as the edit begins. Clips are auditioned in a scrubbing preview where the
-  exact segment to use is marked in and out before it is placed.</p>
+  <p>All clips across all songs live in one tagged library: song, folder, and custom tags combine
+  into queries that drive automatic clip selection. B-roll clips carry highlight ranges so only their
+  best moments are used, and per-clip framings define how each clip is cropped for vertical and 4:3
+  output.</p>
 
   <h2>Mass export pipeline</h2>
-  <p>Styles define recipes: a multi-cam, or a song plus a tag query. The generator rolls batches of
-  randomized draft videos from those recipes, assigning hooks from curated pools. Drafts are
-  previewed inline, re-rolled, edited, and approved or rejected. Approved items render to MP4 in
-  batch, with failures reported per item and per style.</p>
+  <p>Styles are recipes: a multi-cam, or a song plus a tag query. The generator rolls batches of
+  draft videos from those recipes and assigns hooks. Drafts are previewed, re-rolled, edited, and
+  approved or rejected; approved items render to MP4 in batch.</p>
+
+  <h2>Live shows</h2>
+  <p>Full-length concert recordings are split into per-song highlights that become multi-cam groups,
+  so a single show can feed weeks of content.</p>
+
+  <h2>Companion iPhone app (in development)</h2>
+  <p>Browse generated batches, preview, approve, and make quick edits from your phone, connected
+  privately to WonderCut on your Mac.</p>
 
   <h2>Delivery to TikTok</h2>
-  <p>At the end of the pipeline, approved and rendered videos are sent to the band's own TikTok
-  accounts as inbox drafts using TikTok's official Content Posting API. Posting always happens
-  manually from the TikTok app. See <a href="../tiktok-integration/">TikTok Integration</a> for how
-  this works and which permissions it uses.</p>
+  <p>Approved, rendered videos are sent to your own connected TikTok accounts as drafts using TikTok's
+  official Content Posting API. You finish and post them from the TikTok app. See
+  <a href="../tiktok-integration/">TikTok Integration</a> for how this works and which permissions it
+  uses.</p>
 
   <footer>
-    WonderCut is built and operated by Akila Kavisinghe for AKILA &amp; The Wonder Machine.<br />
+    WonderCut is independently developed. Private alpha; public beta planned for 2027.<br />
     <a href="../terms-of-service/">Terms of Service</a> &middot;
-    <a href="../privacy-policy/">Privacy Policy</a> &middot;
-    <a href="mailto:akilakavisinghe1999@gmail.com">Contact</a>
+    <a href="../privacy-policy/">Privacy Policy</a>
   </footer>
 </body>
 </html>
