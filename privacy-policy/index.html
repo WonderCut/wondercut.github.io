@@ -50,11 +50,13 @@
   <h2>3. TikTok data</h2>
   <p>When you connect a TikTok account, the App receives through TikTok's official API, with your
   authorization: your account's open ID, display name, username, and avatar (scopes
-  <code>user.info.basic</code> and <code>user.info.profile</code>), and the ability to upload video
-  drafts to your account (scope <code>video.upload</code>).</p>
+  <code>user.info.basic</code> and <code>user.info.profile</code>), your account's posting settings
+  (allowed audiences, interaction settings, and maximum video length), and the ability to publish
+  videos to your account when you post them (scope <code>video.publish</code>).</p>
   <p>This information and the access tokens are stored only on your computer, encrypted with your
   operating system's secure storage where available, and are sent only to TikTok's own API. Videos
-  are uploaded only when you explicitly send them, and only as drafts to your own account.</p>
+  are uploaded only when you press Post on the TikTok posting screen, only to your own account, and
+  only with the audience and settings you chose there.</p>
 
   <h2>4. Companion iPhone app</h2>
   <p>The companion app connects directly to WonderCut on your own Mac, over your local network or a
