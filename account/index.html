@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Not for search engines: keep this site out of every index. -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+  <title>Your account — WonderCut</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../icon.png" />
+</head>
+<body>
+  <nav>
+    <a class="brand" href="../"><img src="../icon.png" alt="" />WonderCut</a>
+    <a href="../">Home</a>
+    <a href="../features/">Features</a>
+    <a href="../tiktok-integration/">TikTok Integration</a>
+    <a href="../about/">About</a>
+    <a href="../login/" class="nav-button" data-auth-nav>Log in</a>
+  </nav>
+
+  <p id="account-loading" class="tagline">Loading your account…</p>
+  <div id="account" hidden>
+    <h1>Hi, <span id="acct-first"></span></h1>
+    <p class="tagline">Your WonderCut account.</p>
+
+    <h2>Account</h2>
+    <dl class="acct">
+      <dt>Name</dt><dd id="acct-name"></dd>
+      <dt>Email</dt><dd id="acct-email"></dd>
+      <dt>Member since</dt><dd id="acct-since"></dd>
+      <dt>Status</dt><dd id="acct-status"></dd>
+    </dl>
+
+    <h2>The WonderCut app</h2>
+    <p data-status="alpha" hidden>Your account is active and has access to WonderCut for macOS.
+    Builds are delivered to you directly; if you need the latest one,
+    <a data-contact data-subject="WonderCut latest build">contact us</a>.</p>
+    <p data-status="waitlist" hidden>You’re on the list. WonderCut for macOS is opening to new
+    musicians and creators in waves, and we’ll email you at the address above when your account is
+    activated. Nothing else is needed from you.</p>
+
+    <h2>Connected platforms</h2>
+    <div class="card-grid">
+      <div class="card"><h3>TikTok</h3><p>Connect your TikTok account inside the WonderCut app
+        (Settings → TikTok) with TikTok’s official Login Kit. Your TikTok tokens stay on your own
+        computer and are never stored on WonderCut’s servers. Disconnect any time in the app or in
+        TikTok’s settings under Security → Manage app permissions.
+        <a href="../tiktok-integration/">How the TikTok integration works.</a></p></div>
+      <div class="card"><h3>YouTube and Instagram</h3><p>Connected the same way, from the app’s
+        settings, and stored the same way: on your computer only.</p></div>
+    </div>
+
+    <h2>Sign out</h2>
+    <p><button type="button" id="logout" class="secondary">Log out</button></p>
+
+    <h2>Delete account</h2>
+    <p>Deletes your WonderCut account and its details from our servers. Your projects and videos
+    are on your own computer and aren’t affected.</p>
+    <form id="delete-form" class="auth-form inline">
+      <label>Password<input type="password" name="password" autocomplete="current-password" required /></label>
+      <p class="form-error" role="alert"></p>
+      <button type="submit" class="danger">Delete my account</button>
+    </form>
+  </div>
+
+  <footer>
+    WonderCut is independently developed.<br />
+    <a href="../terms-of-service/">Terms of Service</a> &middot;
+    <a href="../privacy-policy/">Privacy Policy</a> &middot;
+    <a data-contact data-subject="WonderCut">Contact</a>
+  </footer>
+  <script src="../contact.js" defer></script>
+  <script src="../auth.js" defer></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="../">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +16,7 @@
     <a href="../features/">Features</a>
     <a href="../tiktok-integration/">TikTok Integration</a>
     <a href="../about/" class="active">About</a>
+    <a href="../login/" class="nav-button" data-auth-nav>Log in</a>
   </nav>
 
   <h1>About</h1>
@@ -37,7 +38,7 @@
     reliability mature.</dd>
     <dt>Beta (planned for 2027)</dt>
     <dd>Invited musicians and creators connect their own accounts and use WonderCut on their own
-    music. <a data-contact data-subject="WonderCut beta access">Request beta access</a>.</dd>
+    music. <a href="../signup/">Create an account</a> to join.</dd>
     <dt>Public release</dt>
     <dd>After the beta, based on what testers need.</dd>
   </dl>
@@ -45,8 +46,8 @@
   <h2>Frequently asked questions</h2>
   <dl>
     <dt>Can I try WonderCut?</dt>
-    <dd>Not yet publicly. Beta invitations open in 2027. <a data-contact data-subject="WonderCut beta access">Request beta access</a> and you'll be contacted
-    when they do.</dd>
+    <dd><a href="../signup/">Create an account</a>. New accounts are activated in waves, and you'll
+    be emailed when yours is.</dd>
     <dt>How do I get in touch?</dt>
     <dd>Use the <a data-contact data-subject="WonderCut">contact link</a>.</dd>
     <dt>What does it run on?</dt>
@@ -60,11 +61,12 @@
   </dl>
 
   <footer>
-    WonderCut is independently developed. Private alpha; public beta planned for 2027.<br />
+    WonderCut is independently developed.<br />
     <a href="../terms-of-service/">Terms of Service</a> &middot;
     <a href="../privacy-policy/">Privacy Policy</a> &middot;
     <a data-contact data-subject="WonderCut">Contact</a>
   </footer>
   <script src="../contact.js" defer></script>
+  <script src="../auth.js" defer></script>
 </body>
 </html>

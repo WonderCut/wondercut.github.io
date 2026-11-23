@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="./">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +16,7 @@
     <a href="features/">Features</a>
     <a href="tiktok-integration/">TikTok Integration</a>
     <a href="about/">About</a>
+    <a href="login/" class="nav-button" data-auth-nav>Log in</a>
   </nav>
 
   <div class="hero">
@@ -27,8 +28,10 @@
     </div>
   </div>
 
-  <p class="notice"><strong>WonderCut is in private alpha.</strong> A beta for invited musicians and
-  creators is planned for 2027. <a data-contact data-subject="WonderCut beta access">Request beta access</a>.</p>
+  <div class="cta">
+    <a class="button" href="signup/">Create an account</a>
+    <a class="button secondary" href="login/">Log in</a>
+  </div>
 
   <p>Musicians are expected to post short-form video constantly, but cutting dozens of lyric clips,
   live cuts, and performance edits by hand in a general-purpose editor doesn't scale. WonderCut is a
@@ -65,11 +68,12 @@
   disclosure for each one. <a href="tiktok-integration/">How the TikTok integration works.</a></p></div>
 
   <footer>
-    WonderCut is independently developed. Private alpha; public beta planned for 2027.<br />
+    WonderCut is independently developed.<br />
     <a href="terms-of-service/">Terms of Service</a> &middot;
     <a href="privacy-policy/">Privacy Policy</a> &middot;
     <a data-contact data-subject="WonderCut">Contact</a>
   </footer>
   <script src="contact.js" defer></script>
+  <script src="auth.js" defer></script>
 </body>
 </html>

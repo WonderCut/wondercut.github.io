@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="../">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +16,7 @@
     <a href="../features/">Features</a>
     <a href="../tiktok-integration/">TikTok Integration</a>
     <a href="../about/">About</a>
+    <a href="../login/" class="nav-button" data-auth-nav>Log in</a>
   </nav>
 
   <h1>Privacy Policy</h1>
@@ -58,26 +59,35 @@
   are uploaded only when you press Post on the TikTok posting screen, only to your own account, and
   only with the audience and settings you chose there.</p>
 
-  <h2>4. Companion iPhone app</h2>
+  <h2>4. Your WonderCut account</h2>
+  <p>If you create an account on this website, we store your name, your email address, the date
+  you signed up, and your account's status. Your password is never stored; we keep only a salted
+  PBKDF2 hash of it. When you log in, a random session token is saved in your browser and a hash of
+  it on our servers; it expires after 30 days or when you log out. Account data is stored with
+  Cloudflare, which hosts the account service. It is used only to run your account and to contact you
+  about it, and it is not linked to your TikTok or other connected accounts.</p>
+
+  <h2>5. Companion iPhone app</h2>
   <p>The companion app connects directly to WonderCut on your own Mac, over your local network or a
   private network you set up. Videos it downloads for previewing are stored on your phone and can be
   removed at any time from its storage settings.</p>
 
-  <h2>5. Deleting your data</h2>
+  <h2>6. Deleting your data</h2>
   <p>Disconnecting a TikTok account in the App's settings revokes its access token with TikTok and
   deletes the stored tokens and profile information from your computer. You can also revoke access
   from your TikTok account's security settings. Your project files are yours to delete like any other
-  files on your computer. To have any data held in the post queue deleted, remove it in the App or <a data-contact data-subject="WonderCut data deletion">contact us</a>.</p>
+  files on your computer. You can delete your WonderCut account and everything stored with it from your <a href="../account/">account page</a>. To have any data held in the post queue deleted, remove it in the App or <a data-contact data-subject="WonderCut data deletion">contact us</a>.</p>
 
-  <h2>6. Contact</h2>
+  <h2>7. Contact</h2>
   <p>Questions about this policy: <a data-contact data-subject="WonderCut privacy">contact us</a>.</p>
 
   <footer>
-    WonderCut is independently developed. Private alpha; public beta planned for 2027.<br />
+    WonderCut is independently developed.<br />
     <a href="../terms-of-service/">Terms of Service</a> &middot;
     <a href="../privacy-policy/">Privacy Policy</a> &middot;
     <a data-contact data-subject="WonderCut">Contact</a>
   </footer>
   <script src="../contact.js" defer></script>
+  <script src="../auth.js" defer></script>
 </body>
 </html>
